@@ -1,0 +1,142 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8">
+		<title>Scrollback thread trainer</title>
+		<style>
+			html, body { margin: 0; padding: 0; }
+			body { padding: 3em; }
+			body, input, button { font: 16px/32px 'Alegreya', serif; }
+			.hidden { display: none !important; }
+			#panel {
+				position: fixed; bottom: 0; left: 0; right: 0; background: #eee;
+				padding: 0.25em 3em;
+			}
+			#raw { 
+				display: block; width: 100%; height: 20em; resize: vertical; 
+				background: transparent; border: 1px solid #ccc; border-radius: 2px;
+				color: #999;
+			}
+			input, button { 
+				box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+				border: 1px solid #ccc; padding: 0 1em; margin: 0; height: 40px;
+			}
+			button { background: #ccc; cursor: pointer; }
+			#tog { float: right; }
+			#pos { width: 10em; text-align: right; }
+			.message { 
+				vertical-align: top; text-align: left;
+				padding: 0 1em; text-overflow: ellipsis; white-space: pre;
+				overflow: hidden; cursor: pointer;
+			}
+			.message:hover { background: #eee; } 
+			.message.current { background: #eee; }
+			
+			.message .from { display: inline; opacity: 0.25; padding-right: 1em; }
+			.message .from:after { content: ':'; }
+			.message .delay { float: left; width: 2em; padding-right: 1em; text-align: right; }
+			.message .text { display: inline; }
+			
+			#logend { display: block; clear: both; margin-top: 3em;}
+			*:focus { outline: none; }
+		</style>
+	</head>
+	<body>
+		
+		<div id='log'>
+			<a id='logend' name='logend'></a>
+		</div>
+		<div id='panel'>
+			<button id='prev'>&#9668;</button><input id='pos' /><button id='next'>&#9658;</button>
+			<button id='tog'>Import/Export</button>
+			<textarea id='raw' class='hidden'></textarea>
+		</div>
+		
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script>
+			var $raw, msgs, $log,
+				colors=['c00','660', '0c0', '066', '00c', '606'];
+			
+			function load(str) {
+				localStorage.messages = str || localStorage.messages;
+				try { msgs = JSON.parse(localStorage.messages);
+				} catch(e) { console.log(e); }
+			}
+			
+			function save() {
+				localStorage.messages = JSON.stringify(msgs);
+				update();
+			}
+			
+			function show(pos) {
+				var msg = msgs[pos], 
+					delay = pos>0? '+'+Math.round((msg.time - msgs[pos-1].time)/1000,0): '',
+					el, $end = $('#logend');
+				$log.find('.message.current').removeClass('current');
+				el = $("<div>").addClass('message current').data('pos', pos).append(
+					[$("<div>").addClass('delay').text(delay),
+					 $("<div>").addClass('from').text(msg.from.replace(/^guest-/,'')),
+					 $("<div>").addClass('text').text(msg.text)]
+				).attr('title', msg.text);
+				
+				if(msg.bucket) color(el, msg.bucket);
+				
+				el.insertBefore($end);
+				$end[0].scrollIntoView();
+			}
+			
+			function color(el, n) {
+				el.css({color: '#' + colors[n % colors.length]});
+			}
+			
+			function init() {
+				$('.message').remove();
+				for(var i=localStorage > 30? localStorage-30: 0; i<=localStorage.position; i++) show(i);
+				update();
+			}
+				
+			function update() {
+				$raw.val(JSON.stringify(msgs, null, 2));
+				$pos.val(parseInt(localStorage.position)+1 + '/' + msgs.length);
+			}
+			
+			$(document).ready(function() {
+				$raw = $('#raw'); $log = $('#log'); $pos = $('#pos'); 
+				localStorage.position = localStorage.position || 0;
+				localStorage.buckets = localStorage.buckets || 0;
+				if(localStorage.messages) load();
+				
+				$raw.change(function() { load($raw.val()); });
+				$pos.change(function() { localStorage.position = parseInt($pos.val())-1; init(); });
+				
+				$log.click(function(e) {
+					var el = $(e.target).closest('.message'),
+						pos = el.data('pos'),
+						bucket = typeof pos !== 'undefined' && msgs[pos].bucket;
+					
+					console.log(pos, bucket);
+					bucket = bucket || localStorage.buckets++;
+					
+					msgs[localStorage.position++].bucket = bucket;
+					color($log.find('.message:last'), bucket);
+					save();
+					show(localStorage.position);
+				});
+				
+				$('#prev').click(function() {
+					if(localStorage.position > 0) localStorage.position -= 1;
+					init();
+				});
+				$('#next').click(function() { 
+					if(localStorage.position < msgs.length-1) 
+						localStorage.position = parseInt(localStorage.position) + 1;
+					init();
+				});
+				$('#tog').click(function(){ $('#raw').toggleClass('hidden'); });
+				
+				init();
+			});
+		</script>
+	</body>
+</html>
