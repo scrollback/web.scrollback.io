@@ -156,7 +156,7 @@ jr.run = function(markdownContent) {
 	var html = converter.makeHtml(markdownContent);
 
 	// Basic HTML5 shell wrapped in a div
-	jr.body.innerHTML = '<div><header></header><main role="main">\
+	jr.body.innerHTML = '<div><header></header><main role="main"><tree></tree>\
 		<article>' + html + '</article>\
 	</main><footer></footer></div>';
 
@@ -164,6 +164,13 @@ jr.run = function(markdownContent) {
 	ajax('header.html', function(x) {
 		if(x) {
 			document.getElementsByTagName('header')[0].innerHTML = x;
+		}
+	});
+
+	// Load the index (if any)
+	ajax('tree.html', function(x) {
+		if(x) {
+			document.getElementsByTagName('tree')[0].innerHTML = x;
 		}
 	});
 

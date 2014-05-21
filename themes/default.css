@@ -225,7 +225,7 @@ main, footer {
 	main, footer { padding: 3em auto; }
 
 	main article h1 { 
-		padding: 1em 0;
+		
 	}
 
 	main article,
@@ -233,7 +233,6 @@ main, footer {
 		max-width: 600px;
 		margin: 0 auto;
 	}
-
 
 	footer section {
 		font-size: .65em;
