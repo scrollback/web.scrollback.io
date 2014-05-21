@@ -160,7 +160,7 @@ jr.run = function(markdownContent) {
 		<article>' + html + '</article>\
 	</main><footer></footer></div>';
 
-// Load the header (if any)
+ 	// Load the header (if any)
 	ajax('header.html', function(x) {
 		if(x) {
 			document.getElementsByTagName('header')[0].innerHTML = x;
