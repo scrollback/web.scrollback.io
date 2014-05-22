@@ -6,11 +6,11 @@ var jr = {
 	markdownContent: null,
 	plugins: {}, // Defined below
 	styles : [
-		'themes/default.css',
-		'//fonts.googleapis.com/css?family=Average',
-		'//fonts.googleapis.com/css?family=Roboto:400,700'
+		'assets/styles/gen/stylesheet.css',
+		'//fonts.googleapis.com/css?family=Open+Sans:300,400,700'
 	],
 	scripts : [
+		'assets/js/main.js'
 		'js/showdown.js'
 		// if you want jQuery or some other library for a plugin
 		// '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'
@@ -156,7 +156,7 @@ jr.run = function(markdownContent) {
 	var html = converter.makeHtml(markdownContent);
 
 	// Basic HTML5 shell wrapped in a div
-	jr.body.innerHTML = '<div><header></header><main role="main"><tree></tree>\
+	jr.body.innerHTML = '<div><header></header><main role="main"><aside></aside>\
 		<article>' + html + '</article>\
 	</main><footer></footer></div>';
 
@@ -170,7 +170,7 @@ jr.run = function(markdownContent) {
 	// Load the index (if any)
 	ajax('tree.html', function(x) {
 		if(x) {
-			document.getElementsByTagName('tree')[0].innerHTML = x;
+			document.getElementsByTagName('aside')[0].innerHTML = x;
 		}
 	});
 
