@@ -3,7 +3,6 @@
 
 (function() {
     'use strict';
-
     function toggleMenu() {
         var className = "menu-open",
             classString = document.body.className,

@@ -1,7 +1,7 @@
 /*
+ * Latest code
  * Master Top Global Root Base Special Parent Object.... thingy
  */
-
 var jr = {
 	body : null,
 	markdownContent: null,
@@ -11,6 +11,7 @@ var jr = {
 		'//fonts.googleapis.com/css?family=Open+Sans:300,400,700'
 	],
 	scripts : [
+		'assets/js/main.js'
 		'js/showdown.js'
 		// if you want jQuery or some other library for a plugin
 		// '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'
@@ -156,9 +157,9 @@ jr.run = function(markdownContent) {
 	var html = converter.makeHtml(markdownContent);
 
 	// Basic HTML5 shell wrapped in a div
-	jr.body.innerHTML = '<div><header></header><main role="main">\
-		<article class="content">' + html + '</article>\
-	</main><aside></aside><footer></footer></div>';
+	jr.body.innerHTML = '<div><header></header><main role="main"><aside></aside>\
+		<article>' + html + '</article>\
+	</main><footer></footer></div>';
 
  	// Load the header (if any)
 	ajax('header.html', function(x) {
@@ -247,23 +248,3 @@ function ajax(url, callback, data)
 	//setTimeout(jr.fireWhenReady, 1000);
 
 })();
-
-(function() {
-    'use strict';
-    function toggleMenu() {
-        var className = "menu-open",
-            classString = document.body.className,
-            nameIndex = classString.indexOf(className);
-
-        if (nameIndex == -1) {
-            classString += " " + className;
-        } else {
-            classString = classString.substr(0, nameIndex) + classString.substr(nameIndex + className.length);
-        }
-
-        document.body.className = classString;
-    }
-
-    document.getElementById("menu").addEventListener("click", toggleMenu, false);
-    document.getElementById("dim").addEventListener("click", toggleMenu, false);
-}());
