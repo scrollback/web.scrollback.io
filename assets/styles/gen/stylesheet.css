@@ -1580,14 +1580,12 @@ h1, h2, h3, h4 {
 header, main, footer {
   padding: .5em 1em; }
 
-header .menu {
-  display: none; }
-  @media only screen and (max-width: 75em) {
-    header .menu {
-      fill: white;
-      display: block;
-      float: right;
-      padding: .5em; } }
+@media only screen and (max-width: 75em) {
+  header .menu {
+    fill: white;
+    display: block;
+    float: right;
+    padding: .5em; } }
 
 .sidebar {
   -webkit-transition: 0.3s ease;
@@ -1607,6 +1605,7 @@ header .menu {
   .sidebar ul {
     list-style: none; }
   .sidebar a {
+    font-size: .8em;
     padding: .25em;
     display: block;
     color: #145244; }
