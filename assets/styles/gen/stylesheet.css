@@ -1580,12 +1580,14 @@ h1, h2, h3, h4 {
 header, main, footer {
   padding: .5em 1em; }
 
-@media only screen and (max-width: 75em) {
-  header .menu {
-    fill: white;
-    display: block;
-    float: right;
-    padding: .5em; } }
+header .menu {
+  display: none; }
+  @media only screen and (max-width: 75em) {
+    header .menu {
+      fill: white;
+      display: block;
+      float: right;
+      padding: .5em; } }
 
 .sidebar {
   -webkit-transition: 0.3s ease;
@@ -1664,3 +1666,22 @@ footer {
   font-size: .9em; }
   footer a {
     color: #cccccc; }
+
+* {
+  margin: 0; }
+
+html, body {
+  height: 100%; }
+
+.wrapper {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -120px; }
+
+.wrapper:after {
+  content: "";
+  display: block; }
+
+footer, .wrapper:after {
+  /* .push must be the same height as footer */
+  height: 120px; }

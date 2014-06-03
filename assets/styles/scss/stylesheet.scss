@@ -21,6 +21,7 @@ header {
     @extend %clearfix;
 
     .menu {
+        display: none;
 
         @media only screen and (max-width: 75em) {
             fill: $light-color;
@@ -119,4 +120,24 @@ footer {
     font-size: .9em;
 
     a { color: darken($light-color, 20%); }
+}
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -120px; 
+}
+.wrapper:after {
+  content: "";
+  display: block;
+}
+footer, .wrapper:after {
+  /* .push must be the same height as footer */
+  height: 120px; 
 }

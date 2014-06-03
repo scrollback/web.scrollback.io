@@ -14,6 +14,36 @@
  d.getElementsByTagName(s)[0].parentNode.appendChild(e);}
  (document,'script',(location.protocol=="https:"?"https:":"http:")+'//scrollback.io'));
 
+document.onreadystatechange = function() {
+    if (document.readyState === "complete") {
+	// Show scrollback embed widget
+
+	// This is to get the menu for the mobile view
+		function toggleMenu() {
+			var className = "menu-open",
+			    classString = document.body.className,
+			    nameIndex = classString.indexOf(className);
+
+			if (nameIndex == -1) {
+			    classString += " " + className;
+			} else {
+			    classString = classString.substr(0, nameIndex) + classString.substr(nameIndex + className.length);
+			}
+
+			document.body.className = classString;
+		}
+
+		document.getElementById("menu").addEventListener("click", toggleMenu, false);
+		document.getElementById("dim").addEventListener("click", toggleMenu, false);
+
+		console.log("Some stuff");
+   }
+}
+
+
+
+// ------------------------------------------------------------------------
+
 var jr = {
 	body : null,
 	markdownContent: null,
@@ -168,9 +198,9 @@ jr.run = function(markdownContent) {
 	var html = converter.makeHtml(markdownContent);
 
 	// Basic HTML5 shell wrapped in a div
-	jr.body.innerHTML = '<div><header></header><main role="main">\
+	jr.body.innerHTML = '<section class="wrapper"><header></header><main role="main">\
 		<article class="content">' + html + '</article>\
-	</main><aside></aside><footer></footer></div>';
+	</main><aside></aside></section><footer></footer>';
 
  	// Load the header (if any)
 	ajax('header.html', function(x) {
@@ -260,22 +290,4 @@ function ajax(url, callback, data)
 
 })();
 
-(function() {
-    'use strict';
-    function toggleMenu() {
-        var className = "menu-open",
-            classString = document.body.className,
-            nameIndex = classString.indexOf(className);
 
-        if (nameIndex == -1) {
-            classString += " " + className;
-        } else {
-            classString = classString.substr(0, nameIndex) + classString.substr(nameIndex + className.length);
-        }
-
-        document.body.className = classString;
-    }
-
-    document.getElementById("menu").addEventListener("click", toggleMenu, false);
-    document.getElementById("dim").addEventListener("click", toggleMenu, false);
-}());
