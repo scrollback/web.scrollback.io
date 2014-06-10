@@ -2,17 +2,7 @@
  * Master Top Global Root Base Special Parent Object.... thingy
  */
 
- window.scrollback = {
-  streams:["support"],
-  theme: 'light',
-  ticker: true
- };
- 
- /***** don't edit below *****/
- (function(d,s,h,e){e=d.createElement(s);e.async=1;
- e.src=h+'/client.min.js';scrollback.host=h;
- d.getElementsByTagName(s)[0].parentNode.appendChild(e);}
- (document,'script',(location.protocol=="https:"?"https:":"http:")+'//scrollback.io'));
+ window.scrollback = {room:"support",embed:"toast",theme:"dark",host:"https://next.scrollback.io"};(function(d,s,h,e){e=d.createElement(s);e.async=1;e.src=h+"/s/js/embed.js";scrollback.host=h;d.getElementsByTagName(s)[0].parentNode.appendChild(e);}(document,"script",scrollback.host));
 
 document.onreadystatechange = function() {
     if (document.readyState === "complete") {
