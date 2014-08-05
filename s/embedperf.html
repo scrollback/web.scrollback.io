@@ -3,9 +3,7 @@
   <head><title>Scrollback embed approach test</title>
   <script>
     var start = new Date().getTime();
-    var e = document.createElement('script');
-    e.src = 'https://scrollback.github.io/s/embedperf.js';
-    document.getElementsByTagName('script')[0].parentNode.appendChild(e);
+    document.write('<script src="https://scrollback.github.io/s/embedperf.js">\u003c/script>');
   </script>
   </head>
   <body>
