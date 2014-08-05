@@ -4,14 +4,8 @@
   <script>
     var start = new Date().getTime();
   </script>
-  <script>
-(function(d,s,p,f){
-  this.sb=f=function(){f.q.push(arguments)};f.q=[];
-  if(p!='https:') p='http:';
-  d.write('<'+s+' src="'+p+'//scrollback.github.io/s/embedperf.js"></'+s+'>');
-}(document,'script',location.protocol));
-sb('hello', 42);
-</script>
+<script>document.write('<script src="http'+(location.protocol=='https:'?'s':'')+
+'://scrollback.github.io/s/embedperf.js">\u003c/script>');</script>
 <script>
 sb('world', 23);
 </script>
