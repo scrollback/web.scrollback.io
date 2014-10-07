@@ -12,24 +12,24 @@ The new Scrollback brings to you all that’s great about the current version an
 ### 1. Introducing Conversations
 Using artificial neural networks, Scrollback can now club related messages together and put them as a [conversation](/docs/conversations).
 
-![](/http://i.imgur.com/5oi1GRa.png?1)
+![](http://i.imgur.com/5oi1GRa.png?1)
 
 ### 2. Making the archives useful with Search
 The full text search now allows you to quickly scan through the archives.
 
-![](/http://i.imgur.com/8AmGg5D.png?1)
+![](http://i.imgur.com/8AmGg5D.png?1)
 
 To find out more on how to use the search option, you can refer to our [documentation](/docs/search). 
 
 ### 3. Find out who is in the room
 You can now see all the online users and followers of your room under a separate tab on the room.
 
-[http://i.imgur.com/KMJqnl8.png?1](http://i.imgur.com/KMJqnl8.png?1)
+![](http://i.imgur.com/KMJqnl8.png?1)
 
 ### 4. A slick new Configuration page for your room
 The room configuration process has been modified and made simple with the new UI.
 
-[http://i.imgur.com/2XqvCz2.png?1](http://i.imgur.com/2XqvCz2.png?1)
+![](http://i.imgur.com/2XqvCz2.png?1)
 
 ### 5. Integrating your IRC channel with Scrollback
 Scrollback now gives the channel operators a more secure way of integrating their IRC channels with their Scrollback rooms.
