@@ -15,9 +15,8 @@ For your event, if you have free wifi (for participants with laptops and smart p
 
 For successful use of Scrollback at your event, reminding people about the chat-room at the right moment (when they are seated - typically between talks) is the best way to bring people on the chat. The ideas we have seen work best include:
 
+1. Bringing up the chat on the projector during Q&A, between talks and during breaks (lunch etc.) *The screen can be customized and sponsor logos can be added if required.*
 
-	1. Bringing up the chat on the projector during Q&A, between talks and during breaks (lunch etc.) *The screen can be customized and sponsor logos can be added if required.*
-	
-	2. The event host may read out questions from Scrollback during the Q&A (for speakers to answer). Reading out interesting anecdotes that people shared during the talk, and most importantly, repeatedly telling people how to get on the chat, also helps.
-	
-	3. Speakers joining the chat, especially after their Q&As are over. People tend to ask far more follow-on questions on chat than on the microphone. Speakers can reminded of this after their talks.
+2. The event host may read out questions from Scrollback during the Q&A (for speakers to answer). Reading out interesting anecdotes that people shared during the talk, and most importantly, repeatedly telling people how to get on the chat, also helps.
+
+3. Speakers joining the chat, especially after their Q&As are over. People tend to ask far more follow-on questions on chat than on the microphone. Speakers can reminded of this after their talks.

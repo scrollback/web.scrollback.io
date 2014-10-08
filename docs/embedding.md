@@ -1,29 +1,29 @@
 ---
 layout: page
-title: Features of Scrollback
-permalink: /docs/features/
+title: Embedding Scrollback
+permalink: /docs/embedding/
 ---
 
-#### Infinite scroll
-Scroll up to see what people were talking about in the last hour - or last week.
+You can easily embed Scrollback into your own website by following these simple steps:
 
-#### Minimize ticker
-Gently introduce casual visitors to your community with conversation that is never out of sight.
+### Step one:
+On the Scrollback website, create your own chat room. This chat-room will be the one which will get embedded into your site.
 
-#### Subtle notifications
-Notifications and timestamps appear when needed, then fade away to keep the focus on the conversation.
+ ![Create own room on Scrollback](http://i.imgur.com/ora5MN8.png)
 
-#### User colors
-Quickly identify who's talking to whom, with colors that represent people consistently.
+### Step two:
+If a room with that name already exists, you will be redirected to that room, else you will be promted accordingly and asked if you would like to create a new room and claim it. Once you claim a your room, you will be get the option to embed your Scrollback room into your website.
 
-#### Timeline
-See the peaks and troughs of conversation in a colorful visualization you can scroll through.
+ ![Option to get the embed Script](http://i.imgur.com/UjsLAE4.png)
 
-#### User history
-Hover over a nickname to see that person's activity highlighted on the timeline.
+### Step three:
+Copy the entire script that appears in the modal window.
 
-#### IRC compatible
-If an active IRC community exists, we gateway to it instead of competing with it.
+ ![Copy Code](http://i.imgur.com/1I7KcYu.png)
 
-#### Seamless integration
-Let Scrollback match the fonts and styles of your website automatically, or customize it extensively with CSS.
+### Step four:
+Open your website's HTML code and paste the script before the closing 'head' tag
+
+**See an example:** [Sample website HTML with Scrollback](http://jsbin.com/AmUkekUL/6/edit)
+
+**On Wordpress?** [Guide to embedding any script (including Scrollback) in a Wordpress site ](http://www.labnol.org/software/javascript-in-wordpress/)
