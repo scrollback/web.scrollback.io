@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scrollback for event organizers
-published: false
+published: true
 ---
 
 [RootConf](https://rootconf.in/2014/) , [MetaRefresh](https://metarefresh.in/2014/), [JSConf Asia](http://2014.jsconf.asia/), [MozCamp India](https://wiki.mozilla.org/MozCamps_2014) and many other conferences have discovered an easy way to make their events even more valuable to attendees. 
