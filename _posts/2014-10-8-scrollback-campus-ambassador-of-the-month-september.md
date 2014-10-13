@@ -5,7 +5,11 @@ title: Scrollback Campus Ambassador of the month - September
 
 Join us in congratulating our rockstar, Mrinal Jain, the Scrollback Campus Ambassador of the month for September.
 
-<img src="http://i.imgur.com/a5nS654.png" align="left" width="150"> Bhopal has officially hosted the maximum number of Scrollback events till date, initiated and executed by Mrinal and his team. Mrinal is the only Scrollback Campus Ambassador to have recruited 17 new buddies for the program in the time span of less than 2 months.
+Bhopal has officially hosted the maximum number of Scrollback events till date, initiated and executed by Mrinal and his team. Mrinal is the only Scrollback Campus Ambassador to have recruited 17 new buddies for the program in the time span of less than 2 months.
+
+<!-- more -->
+
+<img src="http://i.imgur.com/a5nS654.png" align="left" width="150">
 
 According to Mrinal, the students at Sanghvi Institute of Management and Science love Scrollback because its the only chat app that is allowed by colleges on campus. Not only is Scrollback a rage among students but the administration finds it useful too.
 
