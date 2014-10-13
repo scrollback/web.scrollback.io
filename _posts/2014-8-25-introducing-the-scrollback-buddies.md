@@ -3,7 +3,9 @@ layout: post
 title: Introducing the Scrollback buddies
 ---
 
-The [Scrollback Campus Ambassador programme](http://blog.scrollback.io/scrollback-campus-ambassador/) has received a lot of love from all our awesome users and ambassadors in the last few weeks. Its now time for all our Scrollback Campus Ambassadors to spread the love across and appoint new members to the team.
+The Scrollback Campus Ambassador programme has received a lot of love from all our awesome users and ambassadors in the last few weeks. Its now time for all our Scrollback Campus Ambassadors to spread the love across and appoint new members to the team.
+   
+<!-- more -->
 
 <img src="http://i.imgur.com/AmGZ8oQ.jpg" align="right" width="250" />
 

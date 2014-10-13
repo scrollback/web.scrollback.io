@@ -6,6 +6,8 @@ title: FIFA + Scrollback = Prizes
 A quick suggestion based on the feedback of the first few hours of the game play:
 
 * The default username that you see when you land on the room is not 'your' username. It is a temporary name and you will not be able to retain it the next time you come back to the room. Please ensure to login, choose an username and then begin the game.
+    
+<!-- more -->
 
 **Leader board as of now:**
 

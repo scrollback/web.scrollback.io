@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="300"
+   height="300"
+   id="svg2"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="scrollback-logo-square.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="703"
+     id="namedview11"
+     showgrid="false"
+     inkscape:zoom="1.5088021"
+     inkscape:cx="65.827264"
+     inkscape:cy="148.67445"
+     inkscape:window-x="0"
+     inkscape:window-y="341"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <metadata
+     id="metadata18">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4">
+    <path
+       d="m 14.000045,1020.3622 -10.000045,10 5.664746,0 4.335208,-4.3664 4.335305,4.3664 5.664766,0 z"
+       id="0"
+       style="fill:#33ccaa" />
+    <path
+       d="m 14.000043,1048.3622 -10.000046,-10 5.664746,0 4.335208,4.3664 4.335305,-4.3664 5.664766,0 z"
+       id="1" />
+  </defs>
+  <path
+     d="m 0,0 300,0 0,300 -300,0 z"
+     id="path3770"
+     style="fill:#000000;fill-opacity:1;stroke:none" />
+  <g
+     id="g2988"
+     transform="matrix(0.74999895,0,0,0.74999895,37.500157,37.500157)">
+    <use
+       xlink:href="#0"
+       height="372.04999"
+       width="524.40997"
+       y="0"
+       x="0"
+       id="use10"
+       transform="matrix(10,0,0,10,9.99989,-10193.622)" />
+    <path
+       style="fill:#ffffff;fill-opacity:1"
+       id="path12"
+       d="m 49.99986,129.998 0,40 200,0 0,-40 z"
+       inkscape:connector-curvature="0" />
+    <use
+       xlink:href="#1"
+       height="372.04999"
+       width="524.40997"
+       y="0"
+       x="0"
+       style="fill:#ffffff;fill-opacity:1"
+       id="use14"
+       transform="matrix(10,0,0,10,9.99989,-10193.622)" />
+  </g>
+</svg>

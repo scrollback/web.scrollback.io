@@ -8,9 +8,10 @@ Are you as crazy about football as we are?
 If your answer is **yes**, this is the place for you!
 
 This World Cup, you might manage to bag some cool prizes along with the winning team!
+    
+<!-- more -->
 
 <a href="https://scrollback.io/fifa-worldcup-2014/"><img src="http://i.imgur.com/YwNrR2Q.jpg?1" width='700'></a>
-
 
 ## Up for a game?
 

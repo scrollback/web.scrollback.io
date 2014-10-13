@@ -6,6 +6,8 @@ published: true
 
 ## Do you like Scrollback? You will love what’s coming next.
 The new Scrollback brings to you all that’s great about the current version and makes it better with an awesome new UI and some cool new features. You can try it at [next.scrollback.io](http://next.scrollback.io/).
+    
+<!-- more -->
 
 ## A glimpse into the new Scrollback
 

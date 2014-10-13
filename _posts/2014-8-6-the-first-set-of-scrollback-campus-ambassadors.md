@@ -4,6 +4,8 @@ title: The first set of Scrollback Campus Ambassadors
 ---
 
 Selection is always a tougher process for the selector than the applicants. The Scrollback team also had to spend a few sleepless nights to go through all the applications, listen to the applicants during the meetings in the Scrollback room and finally selecting the best from the bunch. We would love to have accommodated all of the applicants, but since we are a small team here, mentoring them would be difficult from our end and thus, we had to put some applicants in queue for the next term.
+    
+<!-- more -->
 
 All the selected candidates have already been informed via email. So, if you have received your email already, here is a more descriptive information on all of the tasks that you are expected to be performing over the next few months as a Scrollback Campus Ambassador:
 

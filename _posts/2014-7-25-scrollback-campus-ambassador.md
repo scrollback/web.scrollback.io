@@ -7,6 +7,8 @@ title: Scrollback Campus Ambassador
 Are individuals who are passionate community builders and believe in Scrollback being the most power tool for building and maintaining communities.
 
 <img src="http://i.imgur.com/lZ2thCE.jpg?1" align="right" width="250" />
+    
+<!-- more -->
 
 ###Who we Are?
 Scrollback Campus Ambassadors are leaders, who are enthusiastic community builders, leading campaigns at their colleges and within their communities to encourage others to use Scrollback as well as contribute to this Open Source project. 

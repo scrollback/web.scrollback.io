@@ -3,7 +3,9 @@ layout: post
 title: The Scrollback Campus Ambassador - an elevator programme
 ---
 
-The Scrollback Campus Ambassador programme, or the Scrollback elevator programme as we call it, is designed to help you grow from being new contributors to finally being a part of the Scrollback core team. 
+The Scrollback Campus Ambassador programme, or the Scrollback elevator programme as we call it, is designed to help you grow from being new contributors to finally being a part of the Scrollback core team.
+
+<!-- more -->
 
 To help you elevate in your journey as a Scrollback contributor, we have tried to recognize a few contribution pathways and ways of rewarding each contribution so as to help you reach the next level easily, gaining more responsibilities as well as more privileges. 
 

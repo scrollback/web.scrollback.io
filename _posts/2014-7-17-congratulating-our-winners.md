@@ -6,6 +6,8 @@ title: Congratulating our winners
 The entire world has just witnessed a mesmerising FIFA World Cup 2014! 
 
 Along with the on-field matches, there was an online version of the adrenaline rush here at the [Scrollback FIFA room](https://scrollback.io/s/fifa-worldcup-2014/). Several of our players were fighting it out to get to the top of the leader board.
+    
+<!-- more -->
 
 To know more about the gameplay and to check the complete leaderboard, you can refer the following posts:
 

@@ -4,6 +4,8 @@ title: Organize an event with Scrollback
 ---
 
 Scrollback is a (IRC like) text chat service which has been successfully used as a back-channel in several Tech and Start-up conferences. At these events, Scrollback has enabled attendees to network, share and connect with the speakers. Scrollback adds to the audiences engagement with the event and the extended community by allowing contextual conversations.
+    
+<!-- more -->
 
 As a promoter of open knowledge, Scrollback team keeps hosting events at it's office in Bangalore and speak at conferences across the globe. The members of the Scrollback team are happy to tell you the Scrollback story, introduce Scrollback, its code-base and the technologies used to build Scrollback as a community tool.
 

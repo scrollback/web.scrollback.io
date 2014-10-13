@@ -6,6 +6,8 @@ title: Be part of the awesomeness!
 If you are a PhoneGap developer and have an experience in mobile apps development, there is an opening for you to be a part of the Scrollback team. 
 
 The main job profile is going to be that of a mobile app developer, but being a part of this start-up, your learning opportunities are going to be limitless.
+    
+<!-- more -->
 
 **Requirements:**
 

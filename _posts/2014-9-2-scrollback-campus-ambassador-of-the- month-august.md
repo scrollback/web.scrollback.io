@@ -4,6 +4,8 @@ title: Scrollback Campus Ambassador of the month - August
 ---
 
 A huge round of applause for all our Scrollback Campus Ambassadors who has been super awesome in the last one month. From installing Scrollback and working with the codebase, to making fabulous T-shirt designs, writing some great blogposts about the programme; they have done loads of amazing work.
+    
+<!-- more -->
 
 <img src="http://i.imgur.com/a5nS654.png" align="left" width="150">
 

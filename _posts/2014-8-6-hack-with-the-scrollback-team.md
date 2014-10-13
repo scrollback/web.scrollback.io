@@ -5,7 +5,9 @@ title: Hack with the Scrollback team
 
 Scrollback welcomes you to a weekend of fun and hacking! Your idea, your application and we will help you complete them.
 
-This weekend, **(starting on 08.08.2014)**, we are going to gather at the Scrollback office to develop some simple, cool mobile applications. 
+This weekend, **(starting on 08.08.2014)**, we are going to gather at the Scrollback office to develop some simple, cool mobile applications.
+    
+<!-- more -->
 
 If you think you are interested in joining us, fill up this form to register yourself.
 

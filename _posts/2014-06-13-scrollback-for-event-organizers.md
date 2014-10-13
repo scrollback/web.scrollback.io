@@ -4,7 +4,9 @@ title: Scrollback for event organizers
 published: true
 ---
 
-[RootConf](https://rootconf.in/2014/) , [MetaRefresh](https://metarefresh.in/2014/), [JSConf Asia](http://2014.jsconf.asia/), [MozCamp India](https://wiki.mozilla.org/MozCamps_2014) and many other conferences have discovered an easy way to make their events even more valuable to attendees. 
+[RootConf](https://rootconf.in/2014/) , [MetaRefresh](https://metarefresh.in/2014/), [JSConf Asia](http://2014.jsconf.asia/), [MozCamp India](https://wiki.mozilla.org/MozCamps_2014) and many other conferences have discovered an easy way to make their events even more valuable to attendees.
+    
+<!-- more -->
 
 Conferences are as much about networking and community building as they are about the content, so these events have Scrollback rooms where participants can network with each other, share anecdotes and have extended QA sessions with the speakers.
 

@@ -2,13 +2,15 @@
 layout: post
 title: Contributing to Scrollback
 ---
+    
+<!-- more -->
 
 All the Scrollback Campus Ambassadors and buddies can choose to take up one or more of the following listed tasks:
 
 * **Graphics work:**
-	* Help us create some cool Scrollback Campus Ambassador posters which can be used across all events this season.
-	* Help us create some cool Facebook cover pics, digital posters, cool logos etc for Scrollback Campus Ambassador.
-    * Help us create some cool T-shirt designs which every Scrollback Campus Ambassador and buddy can proudly wear.
+1. Help us create some cool Scrollback Campus Ambassador posters which can be used across all events this season.
+2. Help us create some cool Facebook cover pics, digital posters, cool logos etc for Scrollback Campus Ambassador.
+3. Help us create some cool T-shirt designs which every Scrollback Campus Ambassador and buddy can proudly wear.
     
 For any graphics work that you want to submit, please create a google drive or dropbox folder or even a github folder of your name, add your images there and share only the shareable link with us via this form.
 
