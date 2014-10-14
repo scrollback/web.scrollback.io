@@ -3,8 +3,8 @@ markdown: kramdown
 highlighter: pygments
 
 # Site settings
-title: "Scrollback"
-description: "Where communities hangout!"
+title: "Scrollback blog"
+description:
 
 email: support@scrollback.io
 #blog logo
