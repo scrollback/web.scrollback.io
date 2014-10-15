@@ -3,53 +3,48 @@ markdown: kramdown
 highlighter: pygments
 
 # Site settings
-title: "Scrollback blog"
-description:
+title: "Scrollback"
+tagline: "Where communities hang out"
+description: "Scrollback is a beautiful, open source text chat service designed for communities. Scrollback chat rooms can be embedded in websites, linked with Twitter hashtags or with IRC channels."
 
 email: support@scrollback.io
-#blog logo
-logo: "/assets/images/scrollback-logo-square.svg"
-# blog cover
-cover: "/assets/images/covers/bg-home-3000.jpg"
 
-name: "Scrollback"
-author: "Scrollback"
-author_image:
-
-paginate: 5
-paginate_path: "/blog/page:num"
-
-url: "/" # the base hostname & protocol for your site
+url: "https://web.scrollback.io/" # the base hostname & protocol for your site
 baseurl: ""
 
-excerpt_separator: "<!-- more -->"
+analytics: "UA-45130412-1"
+
+# sass options
+sass:
+  sass_dir: lace/src/scss
+  style: :compressed
 
 # social icons and sharing options
 social:
   - icon: twitter
     url: https://twitter.com/scrollbackio
-    desc: Follow me on twitter
+    desc: Follow us on Twitter
     share_url: http://twitter.com/share
     share_title: ?text=
     share_link: "&amp;url="
 
   - icon: facebook
     url: https://facebook.com/scrollback
-    desc: Connect with me facebook
+    desc: Connect with us on Facebook
     share_url: //www.facebook.com/sharer.php
     share_title: ?t=
     share_link: "&amp;u="
 
   - icon:	github
     url:	https://github.com/scrollback
-    desc:	Fork me on github
+    desc:	Fork on Github
     share_url:
     share_title:
     share_link:
 
-#  - icon:	google-plus
-#    url:	https://google.com/???
-#    desc:	Add me on google+
-#    share_url:
-#    share_title:
-#    share_link:
+  - icon:	google-plus
+    url:	http://plus.google.com/118029978978376563753
+    desc:	Follow us on Google+
+    share_url:
+    share_title:
+    share_link:
