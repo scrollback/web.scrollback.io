@@ -2,6 +2,8 @@
 /* global $ */
 
 $(function() {
+    var $createField, $createText, $createInput, $createSubmit, $createError;
+
     // Hide non-javascript content
     $("<style>").attr("type", "text/css").text(".nojs { display: none; }").appendTo("head");
 
@@ -13,11 +15,11 @@ $(function() {
     // Show and hide the modal dialog
     function showDialog() {
         if (history.pushState) {
-            history.pushState(null, '');
+            history.pushState(null, "");
         }
 
         $("body").addClass("login-open");
-        $(".modal").find("input").eq(0).focus();
+        $createInput.focus();
     }
 
     function hideDialog() {
@@ -42,37 +44,66 @@ $(function() {
     $(".dim").on("click", hideDialog);
 
     // Validate form submission
+    $createField = $("#create-field");
+    $createText = $("#create-text");
+    $createInput = $createField.find("input[type=submit]");
+    $createError = $createField.find(".error");
+
     function error(err) {
-        $("#create-field > .error").text(err);
-        if (typeof err === 'undefined') {
-            $("#create-field > input[type=submit]").attr('disabled', false);
+        $createError.text(err);
+
+        if (typeof err === "undefined") {
+            $createField.attr("disabled", false);
+
+            return true;
         } else {
-            $("#create-field > input[type=submit]").attr('disabled', true);
+            $createField.attr("disabled", true);
+
+            return false;
         }
     }
 
     function validate() {
-        var name = $("#create-text").val();
-        if (name.length  === 0) { error(''); return false; }
-        if (name.length > 0 && name.length < 3) { error('Must be at least 3 letters long.'); return false; }
-        if (/^[^a-z]/.test(name)) { error('Must start with a lower case letter.'); return false; }
-        if (/[^0-9a-z\-]/.test(name)) { error('Must have only lowercase letters, digits and hyphens (-)'); return false; }
-        if (name.length >= 3) { error(''); }
-        error();
-        return true;
+        var name = $createText.val();
+
+        if (name.length  === 0) {
+            return error("");
+        }
+
+        if (name.length > 0 && name.length < 3) {
+            return error("Room name must be at least 3 letters long.");
+        }
+
+        if (/^[^a-z]/.test(name)) {
+            return error("Room name must start with a lower case letter.");
+        }
+
+        if (/[^0-9a-z\-]/.test(name)) {
+            return error("Room name must have only lowercase letters, digits and hyphens (-)");
+        }
+
+        if (name.length >= 3) {
+            return error("");
+        }
+
+        return error();
     }
 
     // Handle submit button click
-    $("#create-field > input[type=submit]").click(function() {
-        location.href = location.protocol + "//" + location.host + "/" + $("#create-text").val();
-        $("#create-text").val('');
-        $(this).attr('disabled', true);
+    $createSubmit.click(function() {
+        location.href = "https://scrollback.io/" + $createText.val();
+
+        $createText.val("");
+
+        $(this).attr("disabled", true);
     });
 
     // Prevent form submission if input not valid
-    $("#create-text").on("focus keyup change", validate);
-    $("#create-field").submit(function(e) {
+    $createText.on("focus keyup change", validate);
+
+    $createSubmit.submit(function(e) {
         e.preventDefault();
+
         return false;
     });
 });
