@@ -131,7 +131,7 @@ $(function() {
 
     // Handle submit button click
     $("#create-field > input[type=submit]").click(function() {
-        location.href = location.protocol + "//" + location.host + "/" + $("#create-text").val();
+        location.href = "https://scrollback.io/" + $("#create-text").val();
         $("#create-text").val('');
         $(this).attr('disabled', true);
     });
