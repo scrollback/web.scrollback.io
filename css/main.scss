@@ -111,21 +111,6 @@ footer {
     text-align: center;
 }
 
-.pricing {
-    border-top: 1px solid darken($light-color, 10%);
-    background-color: $light-color;
-
-    .price {
-        color: $accent-color;
-        font-size: 2em;
-    }
-
-    .signup {
-        border-top: 1px solid darken($light-color, 5%);
-        text-align: center;
-    }
-}
-
 .poweredby {
     img {
         display: inline-block;
