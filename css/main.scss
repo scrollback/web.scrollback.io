@@ -6,8 +6,7 @@
 ! CONFIGURATION
 ***************/
 
-$font-size: 16px !default;
-$font-size-mobile: 16px !default;
+$font-size: 16px;
 
 
 /**************
@@ -35,6 +34,33 @@ h1, h2, h3, h4, h5, h6 {
 ul, ol { margin-left: 1em; }
 
 li { padding: .5em; }
+
+ol.fancy {
+    margin-left: 2em;
+    list-style: none;
+    counter-reset: numList;
+
+    li {
+        position: relative;
+        padding: 1em;
+
+        &:before {
+            counter-increment: numList;
+            content: counter(numList);
+
+            position: absolute;
+            left: -2em;
+            top: .75em;
+            text-align: center;
+            line-height: 2em;
+            width: 2em;
+            height: 2em;
+            border-radius: 50%;
+            background-color: darken($light-color, 5%);
+            color: lighten($dark-color, 20%);
+        }
+    }
+}
 
 
 /***************
@@ -121,7 +147,7 @@ footer {
 ! COMMON STYLES
 ***************/
 
-.section { padding: 1em 0; }
+.section { padding: 1em; }
 
 .container {
     max-width: 60em;
@@ -129,6 +155,25 @@ footer {
     padding: 1em;
 
     @media only screen and (min-width: 60em) { padding: 2em; }
+}
+
+.content {
+    p { margin-bottom: 2em;  }
+}
+
+.title {
+    font-weight: 700;
+    font-size: 3.5em;
+    margin-top: 2em;
+
+    &:after {
+        content: "";
+        display: block;
+        height: .125em;
+        width: 1em;
+        margin-bottom: .5em;
+        background-color: lighten($dark-color, 60%);
+    }
 }
 
 .center { text-align: center; }
@@ -157,13 +202,28 @@ footer {
     img {
         @include opacity(.5);
         @extend %grayscale;
-        @extend %transition;
-
-        margin: 1em;
 
         &:focus, &:hover, &:active {;
             @include opacity(1);
             @extend %nofilter;
         }
+    }
+}
+
+.tab {
+    padding: 1em;
+    border-radius: $roundness;
+    cursor: pointer;
+
+    &.current { background-color: darken($light-color, 5%); }
+}
+
+.pane {
+    display: none;
+
+    &.current {
+        @extend %fadein;
+
+        display: block;
     }
 }

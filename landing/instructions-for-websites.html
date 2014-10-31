@@ -1,0 +1,96 @@
+---
+layout: base
+title: Instructions for websites and blogs
+permalink: /instructions-for-websites/
+---
+
+<section>
+    <div class="container">
+        <h2>Choose your platform</h2>
+        <div class="row">
+            <div class="col block-1 center tab tab-wordpress">
+                <img src="/assets/images/wordpress.png" alt="Wordpress">
+                <h4>Wordpress</h4>
+            </div>
+            <div class="col block-1 center tab tab-blogger">
+                <img src="/assets/images/blogger.png" alt="Blogger">
+                <h4>Blogger</h4>
+            </div>
+            <div class="col block-1 center tab tab-generic">
+                <img src="/assets/images/joomla.png" alt="Joomla.">
+                <h4>Generic</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col pane pane-wordpress">
+                <h2>For self hosted wordpress blogs</h2>
+                <ol class="fancy">
+                    <li>Log onto <a href="http://web.scrollback.io">web.scrollback.io</a> and click on <b>"Get Started"</b>.</li>
+                    <li>Type the name you would like to give your chatroom (e.g: scrollback.io/typenamehere). This chat-room will be the one which can be embedded into your blog/site. Please note that if the chat room with your chosen name already exits, it will redirect you to that room. If this case, please go through the previous steps again and change the name of your chatroom.</li>
+                    <li>You will need to <b>Sign in</b> to create a chat room. You can do so using you Facebook account or email address.</li>
+                    <li>Click on <b>"Create Room"</b>. Now your chat room will be created.</li>
+                    <li>Log on to your WordPress admin panel.</li>
+                    <li>Select <b>"Plugins"</b> from the sidebar and click on <b>"Add new"</b>.</li>
+                    <li>Search for <b>"Scrollback chat"</b> and install the plugin.</li>
+                    <li>You will now be able to see Scrollback on your plugin list.</li>
+                    <li>Ensure that the plugin is activated.</li>
+                    <li>Go to <b>"Settings"</b> and click on <b>"Scrollback settings"</b>.</li>
+                    <li>Type the room name you have created and save.</li>
+                    <li>You should now be able to see Scrollback on the bottom right corner of the screen.</li>
+                </ol>
+            </div>
+            <div class="col pane pane-blogger">
+                <h2>For blogs hosted by Blogger</h2>
+                <ol class="fancy">
+                    <li>Log onto <a href="http://web.scrollback.io">web.scrollback.io</a> and click on <b>"Get Started"</b>.</li>
+                    <li>Type the name you would like to give your chatroom (e.g: scrollback.io/typenamehere). This chat-room will be the one which can be embedded into your blog/site. Please note that if the chat room with your chosen name already exits, it will redirect you to that room. If this case, please go through the previous steps again and change the name of your chatroom.</li>
+                    <li>You will need to <b>Sign in</b> to create a chat room. You can do so using you Facebook account or email address.</li>
+                    <li>Click on <b>"Create Room"</b>. Now your chat room will be created.</li>
+                    <li>Click on the <b>"i"</b> icon on the top left side of your screen.</li>
+                    <li>Click on <b>"Configure Room"</b>.</li>
+                    <li>Click on <b>"Embed Code"</b>. Copy the entire script that appears on the right hand side of the screen.</li>
+                    <li>Go to <a href="http://blogger.com">blogger.com</a>and log in to your Blogger account with your username and password.</li>
+                    <li>Select the blog in which you want to embed the widget.</li>
+                    <li>Click on <b>"Layout"</b> on the left sidebar, then click on <b>"Add a Gadget"</b>.</li>
+                    <li>Paste the script on the content box and click on <b>"Save"</b>.</li>
+                    <li>The Scrollback chatroom should now be visible on the bottom right side of your screen.</li>
+                </ol>
+            </div>
+            <div class="col pane pane-generic">
+                <h2>For any website or blog</h2>
+                <ol class="fancy">
+                    <li>Log onto <a href="http://web.scrollback.io">web.scrollback.io</a> and click on <b>"Get Started"</b>.</li>
+                    <li>Type the name you would like to give your chatroom (e.g: scrollback.io/typenamehere). This chat-room will be the one which can be embedded into your blog/site. Please note that if the chat room with your chosen name already exits, it will redirect you to that room. If this case, please go through the previous steps again and change the name of your chatroom.</li>
+                    <li>You will need to <b>Sign in</b> to create a chat room. You can do so using you Facebook account or email address.</li>
+                    <li>Click on <b>"Create Room"</b>. Now your chat room will be created.</li>
+                    <li>Click on the <b>"i"</b> icon on the top left side of your screen.</li>
+                    <li>Click on <b>"Configure Room"</b>.</li>
+                    <li>Click on <b>"Embed Code"</b>. Copy the entire script that appears on the right hand side of the screen.</li>
+                    <li>Open your website’s HTML code and paste the script before the closing <b>"&lt;/head&gt;"</b> tag.</li>
+                    <li>The Scrollback chatroom should now be visible on the bottom right side of your screen.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script>
+    $(function() {
+        $(".tab").on("click", function() {
+            var classes = $(this).attr("class") || "",
+                cat;
+
+            cat = classes.match(/tab-[a-z]+/)[0].replace("tab-", "");
+
+            $(".pane, .tab").removeClass("current");
+            $(".pane-" + cat + ", .tab-" + cat).addClass("current");
+        });
+    });
+</script>
