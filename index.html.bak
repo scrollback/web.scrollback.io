@@ -15,8 +15,7 @@ layout: base
 
 <section class="cover">
     <div class="cover-content">
-        <div class="container">
-            <img class="large-logo" src="assets/images/scrollback-large.png" alt="Scrollback">
+        <div class="container center">
             <h1>Where communities hang out.</h1>
             <img src="assets/images/tablet.png" alt="Scrollback on your website">
             <p>Scrollback is a beautiful, open source text chat service designed for communities. Scrollback chat rooms can be embedded in websites and linked with Twitter hashtags or IRC channels.</p>
@@ -63,7 +62,7 @@ layout: base
 </section>
 
 <section class="testimonials">
-    <div class="container">
+    <div class="container center">
         <h2>Used worlwide by communities</h2>
         <div class="row">
             <div class="col block-1">
@@ -131,47 +130,20 @@ layout: base
     </div>
 </section>
 
-<section class="pricing">
-    <div class="container">
-        <div class="row">
-            <div class="col small-12 medium-6">
-                <h2>Standard</h2>
-                <p>Scrollback is an open source project, and the fully functional hosted service will be
-                    availble free forever. This is the best option for small communities.</p>
-                <p class="price">Free</p>
-            </div>
-            <div class="col small-12 medium-6">
-                <h2>Pro</h2>
-                <p>The pro tier is designed for large communities that need advanced customization,
-                    abuse control and integration options. Features in this tier are under development,
-                    so it’s free for now.</p>
-                <p class="price">$9/mo</p>
-            </div>
-        </div>
-    </div>
-    <div class="signup">
-        <div class="container">
-            <p>Sign up today for a free trial of the pro tier. When the beta ends, your account will switch to
-                standard automatically.</p>
-            <a class="login-show button">Get started for free</a>
-        </div>
-    </div>
-</section>
-
-<aside class="fork"><a href="http://github.com/scrollback/scrollback/" target="_blank"><img src="./assets/images/github.svg" alt="Fork on GitHub" /></a></aside>
-
-<section class="login-modal">
-    <a class="close login-close">&times;</a>
+<script id="goto-template" type="text/template">
     <h2>Create or visit a room </h2>
     <p>Type the name of the room you want</p>
     <form id="create-field">
         <label for="create-text">scrollback.io/</label>
-        <input type="text" id="create-text" placeholder="my-community" pattern="[a-z][a-z0-9-]{2,31}" oninvalid="setCustomValidity('Please enter a valid room name')" onchange="try{setCustomValidity('')}catch(e){}" /><input type="submit" value="Go" disabled />
+        <input class="linked" type="text" id="create-text" placeholder="my-community" pattern="[a-z][a-z0-9-]{2,31}" oninvalid="setCustomValidity('Please enter a valid room name')" onchange="try{setCustomValidity('')}catch(e){}" /><input class="linked" type="submit" value="Go" disabled />
         <p class="error"></p>
     </form>
-</section>
+</script>
 
-<aside class="dim"></aside>
+{% include widget.html %}
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.min.js"></script>
+<script src="/lace/src/js/jquery.lace.js"></script>
+<script src="/lace/src/js/jquery.modal.js"></script>
 <script src="/assets/js/main.js"></script>
