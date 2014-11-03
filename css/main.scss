@@ -212,9 +212,14 @@ footer {
 }
 
 .tab {
-    padding: 1em;
+    @extend %transition;
+
+    margin: 0 1em;
+    padding: .5em 1em;
     border-radius: $roundness;
     cursor: pointer;
+
+    &:focus, &:hover, &:active { background-color: darken($light-color, 10%); }
 
     &.current { background-color: darken($light-color, 5%); }
 }
