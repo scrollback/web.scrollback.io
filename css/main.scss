@@ -185,6 +185,13 @@ footer {
     background-image: url(../assets/images/pattern.png);
     background-repeat: repeat;
 
+    &.campus {
+        background-image: url(../assets/images/pattern.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-size: cover;
+    }
+
     .button {
         font-size: 1.2em;
         padding: 1em 2em;
@@ -231,5 +238,15 @@ footer {
         @extend %fadein;
 
         display: block;
+    }
+}
+
+
+.image-border {
+    @extend .center;
+
+    img {
+        border: 2px solid $dark-color;
+        border-radius: $roundness;
     }
 }
