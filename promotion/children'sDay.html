@@ -22,7 +22,7 @@ html,body {
 }
 
 .row {
-	height: calc(100% - 48px);
+	height: 100%;
 	width: 100%; 
 }
 
@@ -45,19 +45,25 @@ body{
 }
 
 .video {
+	height: 100%;
 	width: 70%;
+}
+
+.frame {
+	height: calc(100% - 49px);
+	width: 100%;
 }
 
 .chat {
 	width: 30%;
 }
 header{
-	height: 48px;
+	height: 49px;
 	width: 100%;
 	background-color: #323938;
 	margin: 0;
 	color: #fff;
-	line-height: 48px;
+	line-height: 49px;
 	padding: 0;
 	/*text-align: center;*/
 }
@@ -78,12 +84,15 @@ header{
 
 </head>
 <body>
-	<header>
+	
+	<div class="row">
+		<div class="col video">
+		<header>
 		<a href="https://scrollback.io/"><img class="header-item image" src="http://web.scrollback.io/assets/images/scrollback-large.svg" height="30"></a>
 		<p class="header-item">to your childhood memories... share your best childhood moments with us.</p>
 	</header>
-	<div class="row">
-		<iframe class="col video" width="1280" height="720" src="https://www.youtube.com/embed/TQ1zZ8VaN7M" frameborder="0" allowfullscreen></iframe>
+		<iframe class="frame" width="1280" height="720" src="https://www.youtube.com/embed/TQ1zZ8VaN7M" frameborder="0" allowfullscreen></iframe>
+		</div>
 		<div id="scrollback-container" class="col chat">
 		</div>
 	</div>
