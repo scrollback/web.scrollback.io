@@ -197,7 +197,9 @@ footer {
 .cover {
     padding: 1.5em;
     border-bottom: 1px solid darken($light-color, 5%);
+    background-image: url(../new-website-assets/Assets/export.svg);
     background-repeat: repeat;
+
 
     &.full {
         display: table;
