@@ -171,9 +171,12 @@ footer {
 }
 
 .container {
+    margin-top: 1em;
+    margin-bottom: 1em;
+
     .col {
-        margin-top: 2em;
-        margin-bottom: 2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
 }
 
@@ -217,31 +220,12 @@ footer {
         font-size: 1.2em;
         padding: .75em 2em;
     }
-}
 
-.campus {
-    padding: 1.5em;
-    border-bottom: 1px solid darken($light-color, 5%);
-    background-image: url(../new-website-assets/Assets/export.png);
-    background-repeat: repeat;
-
-
-    &.full {
-        display: table;
-        table-layout: fixed;
-        min-height: 100%;
-        width: 100%;
-
-        .cover-content {
-            display: table-cell;
-            vertical-align: middle;
-        }
-    }
-
-   
-   .button {
-        font-size: 1.2em;
-        padding: .75em 2em;
+    &.campus {
+        padding: 5em;
+        background-color: #5b3dd9;
+        background-image: url(../new-website-assets/Assets/export.png);
+        background-repeat: repeat;
     }
 }
 
