@@ -1,121 +1,197 @@
 ---
-layout: base
 ---
 
-<!--[if IE]>
-<div class="ie warning">
-    <h2>You are using an outdated browser!</h2>
-    <p>Please <a href="http://browsehappy.com">upgrade</a> to a modern browser.</p>
-</div>
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title | prepend: ' - ' | prepend: site.tagline }}{% endif %}">
+        <meta name="twitter:description" content="{{ site.description }}">
+        <meta name="twitter:image" content="{{ site.image | prepend: site.url }}">
+
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+        <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title | prepend: ' - ' | prepend: site.tagline }}{% endif %}">
+        <meta property="og:description" content="{{ site.description }}">
+        <meta property="og:image" content="{{ site.image | prepend: site.url }}">
+
+        <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title | prepend: ' - ' | prepend: site.tagline }}{% endif %}</title>
+
+        <meta name="description" content="{{ site.description }}">
+
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <link rel="image_src" href="{{ site.image | prepend: site.url }}">
+
+        <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+        <link rel="shortcut icon" href="{{ '/assets/images/favicon.png' | prepend: site.baseurl }}">
+
+        <link rel="stylesheet" type="text/css"  media="screen" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+
+        <link rel="stylesheet" type="text/css" media="screen" href="{{ '/css/stylesheet.css'  | prepend: site.baseurl  }}">
+
+        <!-- enable HTML5 in IE, we need to place it before body -->
+        <!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
+<script>window.html5 || document.write('<script src="s/scripts/lib/html5shiv.min.js"><\/script>')</script>
 <![endif]-->
 
-<div class="nojs warning">
-    <h2>Javascript is disabled in your browser!</h2>
-    <p>Please enable Javascript for the website to work.</p>
-</div>
+        <script>
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".nojs { display: none; }";
+            document.getElementsByTagName("head")[0].appendChild(css);
+        </script>
 
-<section class="cover full">
-    <div class="cover-content">
-        <div class="container">
-            <h1>Where communities hang out.</h1>
-            <p>Scrollback is a beautiful, open source text chat service designed for communities. Scrollback chat rooms can be embedded in websites and linked with Twitter hashtags or IRC channels.</p>
-            <a class="login-show button">Get started</a>
-            <p><a id="trial-room">Try it first</a></p>
+        <script>window.scrollback = {room:"scrollback",form:"toast",theme:"dark",minimize:false};(function(d,s,h,e){e=d.createElement(s);e.async=1;e.src=(location.protocol === "https:" ? "https:" : "http:") + "//scrollback.io/client.min.js";d.getElementsByTagName(s)[0].parentNode.appendChild(e);}(document,"script"));</script>
+    </head>
+
+    <body>
+        <!--[if lt IE 9]>
+        <div class="ie warning">
+            <h2>Your browser isn’t supported :-(</h2>
+            <p>Please <a href="http://browsehappy.com">upgrade</a> to a modern browser.</p>
         </div>
-    </div>
-</section>
-
-<section class="feature">
-    <div class="container center">
-        <div class="row">
-            <h2>Features, designed for your community</h2>
-            <div class="col large-4 medium-6 small-12">
-                <img src="assets/images/placeholder.png" alt="Placeholder">
-                <p>I never know why. I only know who. I need...I need...I need... fish fingers and custard!</p>
-            </div>
-            <div class="col large-4 medium-6 small-12">
-                <img src="assets/images/placeholder.png" alt="Placeholder">
-                <p>Overconfidence, this, and a small screwdriver. I’m absolutely sorted.</p>
-            </div>
-            <div class="col large-4 medium-6 small-12">
-                <img src="assets/images/placeholder.png" alt="Placeholder">
-                <p>Usually called 'The Doctor.' Or 'The Caretaker.' Or 'Get off this planet.'</p>
-            </div>
-            <a class="button">See all features</a>
+        <![endif]-->
+        <div class="nojs warning">
+        <h2>Javascript is disabled in your browser!</h2>
+        <p>Please enable Javascript for the website to work.</p>
         </div>
-    </div>
-</section>
-
-<section class="feature">
-    <div class="feat">
-        <article class="container">
-            <div class="row">
-                <img class="col medium-right" src="new-website-assets/Assets/community.svg" alt="Community" width="250">
-                <div class="col">
-                    <h2>Community Managers</h2>
-                    <p>Create an engaging and interactive community using Scrollback. Empower your members to go beyond static comments and nurture interesting, two-way conversations and fruitful discussions.</p>
+        <section id="cover" class="cover-home">
+            <div class="cover-bg">
+                <div class="bg-home"></div>
+                <div class="bg-websites"></div>
+                <div class="bg-conferences"></div>
+                <div class="bg-geeks"></div>
+            </div>
+            <div class="cover-content">
+                <div class="row container">
+                    <div class="small-12 medium-10 large-8 slides">
+                        <img class="large-logo" src="/assets/images/scrollback-large.svg" alt="scrollback" />
+                        <ul class="slider">
+                            <li class="slide-home">
+                                <h1>Where communities hang out</h1>
+                                <p>Scrollback is a beautiful, open source text chat service designed for communities. Scrollback chat rooms can be embedded in websites and linked with Twitter hashtags or IRC channels.</p>
+                            </li>
+                            <li class="slide-websites">
+                                <h1>Text chat within your website</h1>
+                                <p>Sites like <strong>the MixFlavor comic blog</strong> use Scrollback to turn visitors into a friendly community. People who chat stay longer and return more often.</p>
+                                <a href="/websites">Learn more</a>
+                            </li>
+                            <li class="slide-conferences">
+                                <h1>A back-channel for your conference</h1>
+                                <p>Scrollback, used at events like <strong>JSConf Asia</strong>, have allowed attendees to network more freely, share anecdotes related to the talks and have extended QA with speakers.</p>
+                            </li>
+                            <li class="slide-geeks">
+                                <h1>A friendly portal to your IRC channel</h1>
+                                <p>Projects like <strong>Mozilla</strong> put their IRC channel on their website using Scrollback, so that visitors truly learn why it’s called an open-source <em>community</em>.</p>
+                            </li>
+                        </ul>
+                        <div class="links">
+                            <ul>
+                                <li><a class="link-home">Home</a></li>
+                                <li><a class="link-websites">For websites</a></li>
+                                <li><a class="link-conferences">For conferences</a></li>
+                                <li><a class="link-geeks">For geeks</a></li>
+                            </ul>
+                        </div>
+                        <a class="button login-toggle">Get started</a> <span class="try">or <a class="trial-room">Try it first</a></span>
+                    </div>
+                </div>
+                <a class="arrow" href="#features"><img src="/assets/images/arrow.svg" alt="Go down" /></a>
+                <a class="blog" href="http://blog.scrollback.io" target="_blank">Blog</a>
+                <a class="fork" href="http://github.com/scrollback/scrollback/" target="_blank"><img src="/assets/images/github.svg" alt="Fork on GitHub" /></a>
+            </div>
+        </section>
+        <section id="features" class="features">
+            <div class="container">
+                <div class="row">
+                    <div class="col small-12 medium-6 large-4">
+                        <h2>Chattier forums</h2>
+                        <img class="icon" src="/assets/images/online.png" alt="Online" />
+                        <p>Users are engaged like on their favourite chat app, while the community enjoys viral growth, SEO and moderation.</p>
+                    </div>
+                    <div class="col small-12 medium-6 large-4">
+                        <h2>Email notifications</h2>
+                        <img class="icon" src="/assets/images/summary.png" alt="Summary" />
+                        <p>Members of your community get email if someone mentions them, as well as summaries of what was said.</p>
+                    </div>
+                    <div class="col small-12 medium-6 large-4">
+                        <h2>Twitter integration</h2>
+                        <img class="icon" src="/assets/images/twitter.png" alt="Twitter" />
+                        <p>Bring tweets about you into your room instantly, and use them to spark new discussions around the clock.</p>
+                    </div>
                 </div>
             </div>
-        </article>
-    </div>
-</section>
-
-<section class="feature">
-    <div class="feat">
-        <article class="container">
-            <div class="row">
-                <img class="col medium-left" src="new-website-assets/Assets/bloggers.svg" alt="Bloggers and website owners" width="250">
-                <div class="col">
-                    <h2>Bloggers and Website owners</h2>
-                    <p>Build a community around your website and blog by engaging your visitors in real time, immersive conversations.</p>
-                    <p><a href="http://web.scrollback.io/websites/">Read more...</a></p>
+        </section>
+        <section class="testimonials">
+            <div class="container">
+                <h1>Scrollback in the wild</h1>
+                <div class="row">
+                    <div class="col block-1">
+                        <a href="http://mozillaindia.org" target="_blank">
+                            <img src="/assets/images/mozilla.png" alt="Mozilla India, Philippines, and many others.">
+                        </a>
+                    </div>
+                    <div class="col block-1">
+                        <a href="http://hasgeek.com/" target="_blank">
+                            <img src="/assets/images/hasgeek.png" alt="HasGeek">
+                        </a>
+                    </div>
+                    <div class="col block-1">
+                        <a href="http://jsconf.asia" target="_blank">
+                            <img src="/assets/images/jsconf.png" alt="JSConf Asia">
+                        </a>
+                    </div>
+                    <div class="col block-1">
+                        <a href="http://numixproject.org" target="_blank">
+                            <img src="/assets/images/numix.png" alt="Numix Project">
+                        </a>
+                    </div>
                 </div>
             </div>
-        </article>
-    </div>
-</section>
+        </section>
+        <footer>
+            <p>Scrollback is a product of Askabt Pte. Ltd. We respect your <a href="/privacy">privacy</a>. Copyright Askabt Pte. Ltd.</p>
+            <p class="credit">Photo credit <a href="http://www.flickr.com/photos/georgio/6261749693/" target="_blank">flickr.com/photos/georgio</a>.</p>
+            <p class="poweredby"><a href="http://softlayer.com/"><img src="/assets/images/softlayer.png" alt="Softlayer"/></a><a href="http://browserstack.com"><img src="/assets/images/browserstack.png" alt="Browserstack"/></a></p>
+        </footer>
+        <section class="login-modal">
+            <a class="close login-toggle">&times;</a>
+            <!--
+            <h2>Login to scrollback with...</h2>
+            <a class="button google">Google+</a>
+            <a class="button twitter">Twitter</a>
+            <a class="button facebook">Facebook</a>
+            <a class="button persona">Persona</a>
+            <a class="button openid">OpenID</a>
+            -->
+            <h2>Create or visit a room </h2>
+            <p>Type the name of the room you want</p>
+            <form id="create-field">
+                <label for="create-text">scrollback.io/</label>
+                <input type="text" id="create-text" placeholder="my-community" pattern="[a-z][a-z0-9-]{2,31}" oninvalid="setCustomValidity('Please enter a valid room name')" onchange="try{setCustomValidity('')}catch(e){}" /><input type="submit" value="Go" disabled />
+                <p class="error"></p>
+            </form>
+        </section>
+        <aside class="dim"></aside>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
-<section class="feature">
-    <div class="feat">
-        <article class="container">
-            <div class="row">
-                <img class="col medium-right" src="new-website-assets/Assets/irc.svg" alt="IRC" width="250">
-                <div class="col">
-                    <h2>IRC</h2>
-                    <p>Integrate your IRC channel with your Scrollback room and bring it to the wider audience. Don't lose on those new contributors for whom IRC is not only an unknown concept, but also a tough set up. </p>
-                    <p><a href="http://web.scrollback.io/irc/">Read more...</a></p>
-                </div>
-            </div>
-        </article>
-    </div>
-</section>
+        <script src="/assets/js/script.js"></script>
+        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-45130412-1', 'scrollback.io');
+            ga('send', 'pageview');
+        </script>
+    </body>
 
-<section class="feature">
-    <div class="feat">
-        <article class="container">
-            <div class="row">
-                <img class="col medium-left" src="new-website-assets/Assets/events.svg" alt="Events" width="250">
-                <div class="col">
-                    <h2>Event Managers</h2>
-                    <p>Create a buzz around your event with Scrollback. Help your audience connect and network with one another, engage with the speakers and stay involved through extended discussions.</p>
-                </div>
-            </div>
-        </article>
-    </div>
-</section>
-
-<script id="goto-template" type="text/template">
-    <h2>Create or visit a room </h2>
-    <p>Type the name of the room you want</p>
-    <form id="create-field">
-        <label for="create-text">scrollback.io/</label>
-        <input class="linked" type="text" id="create-text" placeholder="my-community" pattern="[a-z][a-z0-9-]{2,31}" oninvalid="setCustomValidity('Please enter a valid room name')" onchange="try{setCustomValidity('')}catch(e){}" /><input class="linked" type="submit" value="Go" disabled />
-        <p class="error"></p>
-    </form>
-</script>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.min.js"></script>
-<script src="/lace/src/js/jquery.lace.js"></script>
-<script src="/lace/src/js/jquery.modal.js"></script>
-<script src="/assets/js/main.js"></script>
+</html>
