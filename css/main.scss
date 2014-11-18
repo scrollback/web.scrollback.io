@@ -197,7 +197,32 @@ footer {
 .cover {
     padding: 1.5em;
     border-bottom: 1px solid darken($light-color, 5%);
-    background-image: url(../new-website-assets/Assets/export.svg);
+    background-image: url(../new-website-assets/Assets/bg-home-3000.jpg);
+    background-repeat: no-repeat;
+
+
+    &.full {
+        display: table;
+        table-layout: fixed;
+        min-height: 100%;
+        width: 100%;
+
+        .cover-content {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+
+    .button {
+        font-size: 1.2em;
+        padding: .75em 2em;
+    }
+}
+
+.campus {
+    padding: 1.5em;
+    border-bottom: 1px solid darken($light-color, 5%);
+    background-image: url(../new-website-assets/Assets/export.png);
     background-repeat: repeat;
 
 
@@ -213,14 +238,8 @@ footer {
         }
     }
 
-    &.campus {
-        background-image: url(../assets/images/pattern.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-size: cover;
-    }
-
-    .button {
+   
+   .button {
         font-size: 1.2em;
         padding: .75em 2em;
     }
