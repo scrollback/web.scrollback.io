@@ -7,6 +7,7 @@
 ***************/
 
 $font-size: 16px;
+$font-line-height: 24px;
 
 
 /**************
@@ -19,6 +20,13 @@ $font-size: 16px;
 @import "effects";
 @import "animations";
 @import "modal";
+
+
+/*************
+! GRID OPTIONS
+**************/
+
+@include grid($block-size: 10em, $columns: 12, $gutter: 1.5em);
 
 
 /*************
@@ -162,6 +170,13 @@ footer {
     p { margin-bottom: 2em;  }
 }
 
+.container {
+    .col {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+}
+
 .title {
     font-weight: 700;
     font-size: 3.5em;
@@ -182,7 +197,21 @@ footer {
 .cover {
     padding: 1.5em;
     border-bottom: 1px solid darken($light-color, 5%);
+    background-image: url(../new-website-assets/Assets/export.svg);
     background-repeat: repeat;
+
+
+    &.full {
+        display: table;
+        table-layout: fixed;
+        min-height: 100%;
+        width: 100%;
+
+        .cover-content {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
 
     &.campus {
         background-image: url(../assets/images/pattern.png);
@@ -193,12 +222,14 @@ footer {
 
     .button {
         font-size: 1.2em;
-        padding: 1em 2em;
+        padding: .75em 2em;
     }
 }
 
 .feature {
     border-bottom: 1px solid darken($light-color, 5%);
+
+    &.alt { background-color: darken($light-color, 1%); }
 
     img { margin: 0 1em; }
 }
