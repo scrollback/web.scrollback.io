@@ -173,14 +173,9 @@ footer {
 ! COMMON STYLES
 ***************/
 
-.section { padding: 1em; }
-
 .container {
     max-width: 60em;
     margin: auto;
-    padding: 1em;
-
-    @media only screen and (min-width: 60em) { padding: 2em; }
 }
 
 .content {
@@ -215,17 +210,16 @@ footer {
 .center { text-align: center; }
 
 .cover {
-    padding: 1.5em;
     border-bottom: 1px solid darken($light-color, 5%);
     background-image: url(../new-website-assets/Assets/bg-home-3000.jpg);
     background-repeat: no-repeat;
-
 
     &.full {
         display: table;
         table-layout: fixed;
         width: 100%;
-        padding: 3em 0;
+        padding-top: 3em;
+        padding-bottom: 3em;
         color: $light-color;
 
         @media screen and (min-width: 640px) { padding-top: 6em; }
