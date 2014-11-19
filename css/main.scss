@@ -233,9 +233,11 @@ footer {
         a {
             &, &:focus, &:hover, &:active { color: $light-color; }
 
-            &:focus, &:hover { border-bottom: 1px solid fade-out($light-color, 0.5); }
+            &:not(.button) {
+                &:focus, &:hover { border-bottom: 1px solid fade-out($light-color, 0.5); }
 
-            &:active { border-bottom: 1px solid fade-out($light-color, 0.7); }
+                &:active { border-bottom: 1px solid fade-out($light-color, 0.7); }
+            }
         }
 
         .cover-content {
