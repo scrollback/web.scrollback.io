@@ -5,6 +5,11 @@ $(function() {
     // Hide non-javascript content
     $("<style>").attr("type", "text/css").text(".nojs { display: none; }").appendTo("head");
 
+    // Navigation menu
+    $("nav .menu").on("click", function() {
+        $(this).closest("nav").toggleClass("collapsed");
+    });
+
     // Show scrollback embed widget
     $("#trial-room").on("click", function() {
         $("body").addClass("scrollback-open");
