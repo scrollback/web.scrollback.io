@@ -1,8 +1,10 @@
 ---
-layout: base
+layout: boilerplate
 title: Scrollback, where communities hang out
 permalink: /new/
 ---
+
+{% include nav-fixed.html %}
 
 <!--[if IE]>
 <div class="ie warning">
@@ -11,19 +13,14 @@ permalink: /new/
 </div>
 <![endif]-->
 
-<div class="nojs warning">
-    <h2>Javascript is disabled in your browser!</h2>
-    <p>Please enable Javascript for the website to work.</p>
-</div>
-
 <section class="cover campus full">
     <div class="cover-content">
         <div class="container">
             <p><img src="/assets/images/scrollback-large.svg"></p>
-            <h1 style="color:white">Where communities hang out.</h1>
-           <!--  <p style="color:white">Scrollback is a beautiful, open source text chat service designed for communities. Scrollback chat rooms can be embedded in websites and linked with Twitter hashtags or IRC channels.</p> -->
+            <h1>Where communities hang out.</h1>
+            <p>Scrollback is a beautiful, open source text chat service designed for communities. Scrollback chat rooms can be embedded in websites and linked with Twitter hashtags or IRC channels.</p>
             <a class="login-show button">Get started</a>
-            <p><a style="color:white" id="trial-room">Try it first</a></p>
+            <p><a id="trial-room">Try it first</a></p>
         </div>
     </div>
 </section>
