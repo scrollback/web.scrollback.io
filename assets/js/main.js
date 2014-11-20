@@ -20,16 +20,12 @@ $(function() {
         var $dialog, $createField, $createText, $createInput, $createSubmit, $createError;
 
         function error(err) {
-            $createError.text(err);
+            $createError.empty().text(err);
 
-            if (typeof err === "undefined") {
-                $createField.attr("disabled", false);
-
-                return true;
+            if (typeof err === "string") {
+                $createInput.attr("disabled", true);
             } else {
-                $createField.attr("disabled", true);
-
-                return false;
+                $createInput.attr("disabled", false);
             }
         }
 
@@ -45,15 +41,11 @@ $(function() {
             }
 
             if (/^[^a-z]/.test(name)) {
-                return error("Room name must start with a lower case letter.");
+                return error("Room name must start with a lower case letter or digit.");
             }
 
             if (/[^0-9a-z\-]/.test(name)) {
-                return error("Room name must have only lowercase letters, digits and hyphens (-)");
-            }
-
-            if (name.length >= 3) {
-                return error("");
+                return error("Room name must have only lowercase letters, digits and hyphens (-).");
             }
 
             return error();
@@ -70,18 +62,14 @@ $(function() {
         $createError = $createField.find(".error");
 
         // Prevent form submission if input not valid
-        $createText.on("focus keyup change", validate);
+        $createText.on("focus keyup kedown change", validate);
 
         $createField.on("submit", function(e) {
             location.href = "https://scrollback.io/" + $createText.val();
 
             $createText.val("");
 
-            $(this).attr("disabled", true);
-
             e.preventDefault();
-
-            return false;
         });
     });
 });
