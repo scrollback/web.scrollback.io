@@ -265,6 +265,28 @@ footer {
 
 .center { text-align: center; }
 
+@mixin bg-slide($slide) {
+    background-image: url(../new-website-assets/Assets/cover/bg-home-300.jpg);
+
+    @media only screen and (min-device-width: 320px) { background-image: url(../new-website-assets/Assets/cover/bg-home-300.jpg);}
+
+    @media only screen and (min-device-width: 700px),
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 320px),
+        only screen and (min--moz-device-pixel-ratio: 2) and (min-device-width: 320px),
+        only screen and (-o-min-device-pixel-ratio: 2/1) and (min-device-width: 320px),
+        only screen and (min-device-pixel-ratio: 2) and (min-device-width: 320px),
+        only screen and (min-resolution: 192dpi) and (min-device-width: 320px),
+        only screen and (min-resolution: 2dppx) and (min-device-width: 320px) { background-image: url(../new-website-assets/Assets/cover/bg-home-1300.jpg); }
+
+    @media only screen and (min-device-width: 1300px),
+        only screen and (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 700px),
+        only screen and (min--moz-device-pixel-ratio: 2) and (min-device-width: 700px),
+        only screen and (-o-min-device-pixel-ratio: 2/1) and (min-device-width: 700px),
+        only screen and (min-device-pixel-ratio: 2) and (min-device-width: 700px),
+        only screen and (min-resolution: 192dpi) and (min-device-width: 700px),
+        only screen and (min-resolution: 2dppx) and (min-device-width: 700px) { background-image: url(../new-website-assets/Assets/cover/bg-home-1600.jpg); }
+}
+
 .cover {
     border-bottom: 1px solid darken($light-color, 5%);
     background-image: url(../new-website-assets/Assets/bg-home-3000.jpg);
@@ -307,9 +329,9 @@ footer {
 
     &.campus {
         @include prefix(background-size, cover);
+        @include bg-slide(home);
 
         background-color: #674647;
-        background-image: url(../new-website-assets/Assets/export.png);
     }
 }
 
