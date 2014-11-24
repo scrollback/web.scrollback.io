@@ -341,6 +341,10 @@ footer {
     img { margin: 0 1em; }
 }
 
+.config-image {
+    img { margin: 0 0; }
+}
+
 .testimonials {
     background-color: darken($light-color, 1%);
 
