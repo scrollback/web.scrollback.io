@@ -40,7 +40,7 @@ more than one hat.</p>
 
 <p>While you must be quite familiar with JS (at the level of being able
 to write, say, a simple ToDo app) knowing other languages and frameworks
-is a definite advantage.</p>
+(Android, iOS, Python, PHP) is a definite advantage.</p>
 
 <p>Key buzzwords that our work touches upon, but DO NOT need to be in
 your resume: Isomorphic JavaScript, Redis, PostgreSQL, Social APIs
@@ -55,12 +55,14 @@ begin work that uses APIs of other popular web services.</p>
 <div class="section">
     <div class="container">
         <div class="row">
-## How to apply ##
+        
+<h2>How to apply</h2>
 
-Send an email to [careers@scrollback.io](mailto:careers@scrollback.io),
+<p>Send an email to [careers@scrollback.io](mailto:careers@scrollback.io),
 preferably with a links to your work and your resume. Don’t forget to
 mention what you see yourself doing at Scrollback. (Use the requirements
-above as a rough guideline.)
+above as a rough guideline.)</p>
+
         </div>
     </div>
 </div>
