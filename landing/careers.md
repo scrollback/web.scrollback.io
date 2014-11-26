@@ -27,7 +27,7 @@ to our online lives.</p>
         <div class="row">
             <div class="col">
             
-<h2>Geeks</h2>
+<h2>1. Geeks</h2>
 
 <p>You’ll build stuff. This means one or more of:</p>
 <ul>
