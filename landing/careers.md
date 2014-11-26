@@ -63,7 +63,7 @@ begin work that uses APIs of other popular web services.</p>
         
 <h2>How to apply</h2>
 
-<p>Send an email to [careers@scrollback.io](mailto:careers@scrollback.io),
+<p>Send an email to <a href='mailto:careers@scrollback.io'>careers@scrollback.io</a>,
 preferably with a links to your work and your resume. Don’t forget to
 mention what you see yourself doing at Scrollback. (Use the requirements
 above as a rough guideline.)</p>
