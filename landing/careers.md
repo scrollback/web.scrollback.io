@@ -12,6 +12,10 @@ permalink: /careers/
 <h1> We’re hiring </h1>
 <p>Scrollback is a seed-funded startup that wants to bring back a sense of community
 to our online lives.</p>
+
+<p>Most online media today are about finding new ways to connect you to people you already know — your friends and family or celebrities you’ve seen on TV. A decade ago the web was very different; forums and chat rooms let you connect with interesting new people who happen to share your interests. We believe there is value in those connections too — that's why we’re building Scrollback.</p>
+
+<p>Scrollback aims to transform the user experience for online communities by combining the ease and engagement of chat with content organization of forums. It’s used by over 700 communities, including several regional communities of Mozilla, cryptocurrency communities like dogecoin, activist groups, tech conferences, comic blogs, online games and even municipalities.</p>
                 
             </div>
         </div>
@@ -34,7 +38,8 @@ to our online lives.</p>
     <li>devops (CI, deployment, monitoring)</li>
 </ul>
 
-<p>You’ll be working with a small but amazingly talented team of people.
+<p>You’ll be working with a small but amazingly talented team of people
+on a fully open source product.
 Everyone does more than one thing, and we look for people who can wear
 more than one hat.</p>
 
