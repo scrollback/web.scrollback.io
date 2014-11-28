@@ -9,10 +9,10 @@ description: "Scrollback is a beautiful, open source text chat service designed 
 
 email: support@scrollback.io
 
-url: "https://web.scrollback.io/" # the base hostname & protocol for your site
+url: "http://web.scrollback.io/" # the base hostname & protocol for your site
 baseurl: ""
 
-analytics: "UA-45130412-1"
+analytics: "UA-45130412-2"
 
 # sass options
 sass:
