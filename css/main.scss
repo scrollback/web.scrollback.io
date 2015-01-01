@@ -36,11 +36,6 @@ $font-line-height: 24px;
 
 html, body { height: 100%; }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-    margin-bottom: .5em;
-}
-
 ul, ol { margin-left: 1em; }
 
 li { padding: .5em; }
@@ -255,7 +250,7 @@ footer {
         display: block;
         height: .125em;
         width: 1em;
-        margin-bottom: .5em;
+        margin: .5em 0;
         background-color: lighten($dark-color, 60%);
     }
 }
