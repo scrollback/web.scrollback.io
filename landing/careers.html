@@ -1,25 +1,70 @@
 ---
-layout: base
-title: Scrollback for websites and blogs
 permalink: /careers/
 ---
 
-<div class="section feature">
-    <div class="container center">
-        <div class="row">
-            <div class="col">
-                <img src="/new-website-assets/Assets/hiring.svg" width="600">
-            </div>
-        </div>
-    </div>
- </div>
+<!DOCTYPE html>
+    <html lang="en">
+          <head>
+            <meta charset="utf-8">
 
+            <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+            <meta name="twitter:card" content="summary">
+            <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title | prepend: ' - ' | prepend: site.tagline }}{% endif %}">
+            <meta name="twitter:description" content="{{ site.description }}">
+            <meta name="twitter:image" content="{{ site.image | prepend: site.url }}">
+
+            <meta property="og:type" content="website">
+            <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+            <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title | prepend: ' - ' | prepend: site.tagline }}{% endif %}">
+            <meta property="og:description" content="{{ site.description }}">
+            <meta property="og:image" content="{{ site.image | prepend: site.url }}">
+
+            <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title | prepend: ' - ' | prepend: site.tagline }}{% endif %}</title>
+
+            <meta name="description" content="{{ site.description }}">
+
+            <meta name="HandheldFriendly" content="True">
+            <meta name="MobileOptimized" content="320">
+            <meta name="apple-mobile-web-app-capable" content="yes">
+            <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+            <link rel="image_src" href="{{ site.image | prepend: site.url }}">
+
+            <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+            <link rel="shortcut icon" href="{{ '/assets/images/favicon.png' | prepend: site.baseurl }}">
+
+            <link rel="stylesheet" type="text/css"  media="screen" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+
+            <link rel="stylesheet" type="text/css" media="screen" href="{{ '/css/banner.css'  | prepend: site.baseurl  }}">
+
+
+            <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+            <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+            <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+              <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+            <![endif]-->
+
+          </head>
+<body>
+
+<nav class="navbar navbar-colored" style="background-color: #3ca;">
+        <img class="navbar-left navbar-logo" src="/assets/images/banner/scrollback-large.png">
+        <ul class="navbar-right" >
+            <li class="navbar-item"><a href="http://blog.scrollback.io/" target="_blank">Blog</a></li>
+        </ul>
+    </nav>
  <div class="section feature">
+ <h1 style="text-align: center; padding-top: 80px; font-size: 36px;"> WE ARE HIRING</h1>
     <div class="container">
+
         <div class="row">
-            <div class="col">
-                <p>Scrollback is a funded startup that wants to bring back a sense of community to our online lives.</p> 
-                <p>Most online media today are about finding new ways to connect you to people you already know — your friends and family or celebrities you’ve seen on TV. A decade ago the web was very different; forums and chat rooms let you connect with interesting new people who happen to share your interests. We believe there is value in those connections too — that's why we’re building Scrollback.</p> 
+            <div class="col" style="margin-right: 40px; margin-left:40px;">
+                <p>Scrollback is a funded startup that wants to bring back a sense of community to our online lives.</p>
+                <p>Most online media today are about finding new ways to connect you to people you already know — your friends and family or celebrities you’ve seen on TV. A decade ago the web was very different; forums and chat rooms let you connect with interesting new people who happen to share your interests. We believe there is value in those connections too — that's why we’re building Scrollback.</p>
                 <p>Scrollback aims to transform the user experience for online communities by combining the ease and engagement of chat with content organization of forums. It’s used by over 700 communities, including several regional communities of Mozilla, cryptocurrency communities like dogecoin, activist groups, tech conferences, comic blogs, online games and even municipalities.</p>
             </div>
         </div>
@@ -28,10 +73,11 @@ permalink: /careers/
 
 <div class="section">
     <div class="container">
+
         <div class="row">
-        <img class="col medium-right" src="/new-website-assets/Assets/career.svg" width="280" alt="Career">
-            <div class="col">
-            
+        <img class="col medium-right" src="/new-website-assets/Assets/career.svg" width="280" alt="Career" style="margin-right: 40px; margin-left:40px;">
+            <div class="col" style="margin-right: 40px; margin-left:40px;">
+
 <h2>1. Geeks</h2>
 
 <p>You’ll build stuff. This means one or more of:</p>
@@ -56,7 +102,6 @@ to write, say, a simple ToDo app) knowing other languages and frameworks
 your resume: Isomorphic JavaScript, Redis, PostgreSQL, Social APIs
 (Twitter, Facebook, Google), IRC, ML, NLP, SEO. We also expect to
 begin work that uses APIs of other popular web services.</p>
-                
             </div>
         </div>
     </div>
@@ -64,8 +109,7 @@ begin work that uses APIs of other popular web services.</p>
 
 <div class="section">
     <div class="container">
-        <div class="row">
-        
+        <div class="row" style="margin-right: 40px; margin-left:40px;">
 <h2>How to apply</h2>
 
 <p>Send an email to <a href='mailto:careers@scrollback.io'>careers@scrollback.io</a>,
@@ -76,4 +120,6 @@ above as a rough guideline.)</p>
         </div>
     </div>
 </div>
+</body>
+</html>
 

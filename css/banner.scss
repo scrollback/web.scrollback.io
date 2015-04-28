@@ -5,79 +5,76 @@
 @import "global";
 @import "base";
 @import "clearfix";
+@import "dropshadow";
+@import "grid";
+@import "reset";
 
-html, body { height: 100%; }
+@include grid($block-size: 10em, $columns: 12, $gutter: 1.5em);
 
 .navbar {
-  @extend %clearfix;
+    @extend %clearfix;
 
-  width: 100%;
-  padding: .5em;
-
-  > ul { list-style: none; }
-
-  &-left { float: left; }
-
-  &-right { float: right; }
-
-  &-item {
-    float: left;
-
-    > a {
-      display: block;
-      padding: .75em 1em;
-      text-transform: uppercase;
-      font-weight: bold;
-      color: $light-color;
-      border-radius: $roundness;
-      border: 0;
-      opacity: .5;
-
-      &:focus { opacity: 1; }
-
-      &:hover {
-        opacity: 1;
-        background-color: rgba(255, 255, 255, .4);
-      }
-
-      &:active {
-        opacity: 1;
-        background-color: rgba(255, 255, 255, .5);
-      }
-    }
-  }
-}
-
-.banner {
-  display: table;
-  table-layout: fixed;
-  height: 100%;
-  width: 100%;
-  background-image: url(../../assets/images/banner/banner.png);
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  color: white;
-
-  &-content {
-    display: table-cell;
-    vertical-align: middle;
-    height: 100%;
     width: 100%;
+    padding: 1em .5em;
 
-    &-inner {
-      max-width: 27em;
-      margin: auto;
-      padding: 1em;
+    &-colored {
+        @include dropshadow(2);
+
+        background-color: $accent-color;
+        color: $light-color;
+        height: 3.5em;
+        padding: 0;
+        overflow: hidden;;
     }
-  }
 
-  &-form {
-    input { border: 0; }
-  }
+    > ul {
+        margin: 0;
+        list-style: none;
+    }
 
-  .navbar {
-    position: absolute;
-    top: 0;
-  }
+    &-left { float: left; }
+
+    &-right { float: right; }
+
+    &-item {
+        float: left;
+
+        > a {
+            display: block;
+            padding: .75em 1em;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: $light-color;
+            border-radius: $roundness;
+            border: 0;
+            opacity: .5;
+
+            &:focus { opacity: 1; }
+
+            &:hover {
+                opacity: 1;
+                background-color: rgba(255, 255, 255, .4);
+            }
+
+            &:active {
+                opacity: 1;
+                background-color: rgba(255, 255, 255, .5);
+            }
+
+            .navbar-colored & {
+                padding: 1em;
+                border-radius: 0;
+                opacity: 1;
+
+                &:hover { background-color: rgba(0,0,0,0.1); }
+
+                &:active { background-color: rgba(0,0,0,0.2); }
+            }
+        }
+    }
+
+    &-logo {
+        height: 2em;
+        margin: .75em;
+    }
 }
